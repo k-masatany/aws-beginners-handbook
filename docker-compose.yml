@@ -1,0 +1,10 @@
+version: "2"
+services:
+  review:
+    image: vvakame/review:4.1
+    working_dir: /work
+    privileged: true
+    volumes:
+      - ./src/:/work
+    ports:
+      - "127.0.0.1:18000:18000"
